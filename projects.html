@@ -13,36 +13,42 @@
 <body>
 
     <!--Navbar-->
-    <header style="background-color: rgba(20,22,35,255);">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                Bayan Alkhader 
-              </div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <div class="nav-links">
-              <a href="//github.io/jo_geek" target="_blank">Home</a>
-              <a href="http://stackoverflow.com/users/4084003/" target="_blank">Works</a>
-              <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Contact</a>
-            </div>
-          </div>
+    <header>
+        <div class="logo">Bayan Alkhader</div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar active">
+          <ul>
+            <li>
+              <a href="#:none" class="active">Home</a>
+            </li>
+            <li>
+              <a href="" class="">Projects</a>
+            </li>
+            <li>
+              <a href="" class="">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
+
+      <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick=function(){
+          navBar=document.querySelector(".nav-bar");
+          navBar.classList.toggle("active");
+        }
+      </script>
 
 
 
       <div class="containerP">
         <div class="cardP">
             <div class="card-image">
-                <img src="" alt="website design">
+                <img src="eventsScreenshot .png" alt="website design">
                 
             </div>
             <div class="card-content">
